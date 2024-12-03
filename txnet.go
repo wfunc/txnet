@@ -136,7 +136,7 @@ func CallJSON(apiName string, request xmap.M) (resp xmap.M, err error) {
 }
 
 func CallURL(apiName string, request xmap.M) (result string) {
-	keyA, keyC, keyB := ReadKeyABC(apiName)
+	keyA, keyB, keyC := ReadKeyABC(apiName)
 	yyyyMMDD := time.Now().Format(`20060102`)
 	username := request.Str("username")
 	key := keyA + xhash.MD5([]byte(website+username+keyB+yyyyMMDD)) + keyC
@@ -149,6 +149,9 @@ func CallURL(apiName string, request xmap.M) (result string) {
 	}
 	reqs = reqs[:len(reqs)-1]
 	result = apiHost + apiName + "?" + reqs
+	if Verbose {
+		xlog.Infof("%v keyA=%v keyB=%v keyC=%v", apiName, keyA, keyB, keyC)
+	}
 	return
 }
 
