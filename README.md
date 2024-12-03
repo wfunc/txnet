@@ -4,14 +4,10 @@ TxNet 是一个用于与天下网络系统进行交互的 Golang SDK。它提供
 
 ## 安装
 
-1. 克隆项目：
+1. 安装依赖包
 
    ```bash
-   git clone https://github.com/wfunc/txnet.git
-   cd txnet
-2. 获取依赖：
-   ```bash
-   go mod tidy
+   go get github.com/wfunc/txnet
 
 ## 配置
 1. 配置文件 example.properties 用于设置以下选项：
