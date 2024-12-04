@@ -20,6 +20,8 @@ github.com/wfunc/go v0.0.0-20241203155450-2f254e5b2c5f h1:n6gwKzXbhhXVL1B3aMdM+I
 github.com/wfunc/go v0.0.0-20241203155450-2f254e5b2c5f/go.mod h1:+NRv9oB++cI4zjMsL+TMYgOlylQljwZe0cQklie4R6A=
 github.com/wfunc/util v0.0.0-20240817075603-24f03c467819 h1:GgkyqwlB4tcQ82mi9ovGUj6tAz9YyyW8ubkprPCkUko=
 github.com/wfunc/util v0.0.0-20240817075603-24f03c467819/go.mod h1:/+Occ/8sedk4fPvoxbxVIlCa4zU1almMwe/X5HURggc=
+github.com/wfunc/util v0.0.0-20241204104633-5f6ebd6537c1 h1:7CjkBGyUs9oYPXgxHSV3W/CRZSbPnC/n8PefNJA7VXw=
+github.com/wfunc/util v0.0.0-20241204104633-5f6ebd6537c1/go.mod h1:BOIwjY7WeQCKCNuWP7wQnljlgNayIdlQz3LNF7uz+uI=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=
 go.uber.org/atomic v1.7.0 h1:ADUqmZGgLDDfbSL9ZmPxKTybcoEYHgpYfELNoN+7hsw=
 go.uber.org/atomic v1.7.0/go.mod h1:fEN4uk6kAWBTFdckzkM89CLk9XfWZrxpCo0nPH17wJc=
@@ -39,6 +41,7 @@ golang.org/x/net v0.0.0-20190620200207-3b0461eec859/go.mod h1:z5CRVTTTmAJ677TzLL
 golang.org/x/net v0.0.0-20210405180319-a5a99cb37ef4/go.mod h1:p54w0d4576C0XHj96bSt6lcn1PtDYWL6XObtHCRCNQM=
 golang.org/x/net v0.28.0 h1:a9JDOJc5GMUJ0+UDqmLT86WiEy7iWyIhz8gz8E4e5hE=
 golang.org/x/net v0.28.0/go.mod h1:yqtgsTWOOnlGLG9GFRrK3++bGOUEkNBoHZc8MEDWPNg=
+golang.org/x/net v0.31.0/go.mod h1:P4fl1q7dY2hnZFxEk4pPSkDHF+QqjitcnDjUQyMM+pM=
 golang.org/x/sync v0.0.0-20190423024810-112230192c58/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sync v0.0.0-20210220032951-036812b2e83c/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=
 golang.org/x/sys v0.0.0-20190215142949-d0b11bdaac8a/go.mod h1:STP8DvDyc/dI5b8T5hshtkjS+E42TnysNCUPdjciGhY=
