@@ -1,10 +1,10 @@
 module github.com/wfunc/txnet
 
-go 1.22.3
+go 1.23
 
 require (
 	github.com/codingeasygo/util v0.0.0-20231206062002-1ce2f004b7d9
-	github.com/wfunc/go v0.0.0-20241017084432-235925acc38f
+	github.com/wfunc/go v0.0.0-20241203155450-2f254e5b2c5f
 	github.com/wfunc/util v0.0.0-20240817075603-24f03c467819
 )
 

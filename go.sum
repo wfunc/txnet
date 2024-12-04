@@ -16,8 +16,8 @@ github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+
 github.com/stretchr/testify v1.3.0/go.mod h1:M5WIy9Dh21IEIfnGCwXGc5bZfKNJtfHm1UVUgZn+9EI=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-github.com/wfunc/go v0.0.0-20241017084432-235925acc38f h1:TSSDaXZjB1N2bzbCU5nf7A0URsGg36/PigCYRmb37YA=
-github.com/wfunc/go v0.0.0-20241017084432-235925acc38f/go.mod h1:+NRv9oB++cI4zjMsL+TMYgOlylQljwZe0cQklie4R6A=
+github.com/wfunc/go v0.0.0-20241203155450-2f254e5b2c5f h1:n6gwKzXbhhXVL1B3aMdM+I7cFpTR22M+wuCNleWhTjI=
+github.com/wfunc/go v0.0.0-20241203155450-2f254e5b2c5f/go.mod h1:+NRv9oB++cI4zjMsL+TMYgOlylQljwZe0cQklie4R6A=
 github.com/wfunc/util v0.0.0-20240817075603-24f03c467819 h1:GgkyqwlB4tcQ82mi9ovGUj6tAz9YyyW8ubkprPCkUko=
 github.com/wfunc/util v0.0.0-20240817075603-24f03c467819/go.mod h1:/+Occ/8sedk4fPvoxbxVIlCa4zU1almMwe/X5HURggc=
 github.com/yuin/goldmark v1.3.5/go.mod h1:mwnBkeHKe2W/ZEtQ+71ViKU8L12m81fl3OWwC1Zlc8k=

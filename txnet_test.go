@@ -9,7 +9,7 @@ import (
 )
 
 func init() {
-	Bootstrap("example.properties")
+	Bootstrap("temp.properties")
 }
 
 func TestBootstarp(t *testing.T) {
@@ -106,7 +106,8 @@ func TestGameUrlBy3(t *testing.T) {
 	if len(sessionid) < 1 {
 		return
 	}
-	resp, err = GameUrlBy3("zh-cn", sessionid, "", "", "")
+	// 国际厅：global、区块链：blockchain
+	resp, err = GameUrlBy3("zh-cn", sessionid, "3001", "1", "")
 	if err != nil {
 		t.Error(err)
 		return
