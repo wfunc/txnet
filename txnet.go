@@ -105,7 +105,7 @@ func CallJSON(apiName string, request xmap.M) (resp xmap.M, err error) {
 	if Verbose {
 		xlog.Infof("%v keyA=%v keyB=%v keyC=%v", apiName, keyA, keyB, keyC)
 	}
-	yyyyMMDD := time.Now().Format(`20060102`)
+	yyyyMMDD := yyyyMMDD()
 	username := request.Str("username")
 	beforeMD5 := website + username + keyB + yyyyMMDD
 	if apiName == "Transfer" {
@@ -130,14 +130,14 @@ func CallJSON(apiName string, request xmap.M) (resp xmap.M, err error) {
 	reqs = reqs[:len(reqs)-1]
 	resp, err = shared.GetMap(apiHost+apiName+"?%v", reqs)
 	if Verbose {
-		xlog.Infof("%v %v", apiName, reqs)
+		xlog.Infof("\nrequestURL--->%v \nreqs--->%v \nresp--->%v", apiHost+apiName, reqs, converter.JSON(resp))
 	}
 	return
 }
 
 func CallURL(apiName string, request xmap.M) (result string) {
 	keyA, keyB, keyC := ReadKeyABC(apiName)
-	yyyyMMDD := time.Now().Format(`20060102`)
+	yyyyMMDD := yyyyMMDD()
 	username := request.Str("username")
 	key := keyA + xhash.MD5([]byte(website+username+keyB+yyyyMMDD)) + keyC
 	request["website"] = website
@@ -150,7 +150,7 @@ func CallURL(apiName string, request xmap.M) (result string) {
 	reqs = reqs[:len(reqs)-1]
 	result = apiHost + apiName + "?" + reqs
 	if Verbose {
-		xlog.Infof("%v keyA=%v keyB=%v keyC=%v", apiName, keyA, keyB, keyC)
+		xlog.Infof("beforeMD5--->%v \n %v keyA=%v keyB=%v keyC=%v", website+username+keyB+yyyyMMDD, apiName, keyA, keyB, keyC)
 	}
 	return
 }
@@ -353,4 +353,15 @@ func GetWagersSubDetailUrlBy3(wagersid, lang, username, gametype string) (resp x
 	req["username"] = username
 	req["gametype"] = gametype
 	return CallJSON("GetWagersSubDetailUrlBy3", req)
+}
+
+func yyyyMMDD() (yyyyMMDD string) {
+	now := time.Now()
+	loc, err := time.LoadLocation("America/New_York")
+	if err != nil {
+		fmt.Println("Error loading time zone:", err)
+		return
+	}
+	nyTime := now.In(loc)
+	return nyTime.Format(`20060102`)
 }
