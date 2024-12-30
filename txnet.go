@@ -363,7 +363,7 @@ func yyyyMMDD() (yyyyMMDD string) {
 	// 	return
 	// }
 	// nyTime := now.In(loc)
-	// nyTime := now.Add(-12 * time.Hour)
-	nyTime := now
+	nyTime := now.Add(-4 * time.Hour)
+	// nyTime := now
 	return nyTime.Format(`20060102`)
 }
