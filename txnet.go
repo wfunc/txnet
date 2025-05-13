@@ -357,13 +357,5 @@ func GetWagersSubDetailUrlBy3(wagersid, lang, username, gametype string) (resp x
 
 func yyyyMMDD() (yyyyMMDD string) {
 	now := time.Now()
-	// loc, err := time.LoadLocation("America/New_York")
-	// if err != nil {
-	// 	fmt.Println("Error loading time zone:", err)
-	// 	return
-	// }
-	// nyTime := now.In(loc)
-	nyTime := now.Add(-4 * time.Hour)
-	// nyTime := now
-	return nyTime.Format(`20060102`)
+	return now.Format(`20060102`)
 }
